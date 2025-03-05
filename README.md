@@ -42,3 +42,7 @@
 ## Dependencies
 - **D3.js v7** (for interactive visualizations)
 - Modern Web Browser (Chrome, Firefox, etc.)
+
+## Harmony Insights Poster
+[📄 Harmony Insights Poster](Poster.pdf)
+
