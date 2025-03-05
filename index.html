@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony insights</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 style="text-align: center;" >Welcome to Harmony Insights</h2>
+      <p style="text-align: center;" >This is your Spotify user data analysis dashboard.</p>
+      <img src="Welcome_page.png" alt="Welcome Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+
+  </div>
+</div>
+
+    <h1 style="text-align: center;">Harmony insights: spotify user data analysis</h1>
+
+
+    <div class="grid-container">
+      
+      <div class="chart-section">
+        <h2 class="chart-heading">Top 10 Artist Streamed Throughout the Year</h2>
+        <div id="horizontalChart"></div>
+      </div>
+
+
+        <div class="chart-section">
+          <h2 class="chart-heading">Total Listening Time by Artist in Minutes</h2>
+          <div class="flexingthecheckboxes">
+            <div id="verticalChart"></div>
+            <div class="checkbox_container" id="checkbox_container" >
+              <input type="checkbox" id="All" class="artist-checkbox" checked />All<br />
+          </div>
+          </div>
+        
+        </div>
+     
+
+
+
+      <div class="chart-section">
+        <h2 class="chart-heading">Minutes Streamed Throught the Year (Month Wise)</h2>
+        <div id="lineChart"></div>
+      </div>
+
+      <div class="chart-section">
+        <h2 class="chart-heading">Track Popularity by Artist</h2>
+        <div id="bubbleChart"></div>
+      </div>
+
+
+    <div id="filtekkk" >
+
+
+      <div class="price-input-container"> 
+        <div class="price-input"> 
+            <div class="price-field"> 
+                <span>Minimum Minutes</span> 
+                <input type="number" 
+                       class="min-input" 
+                       value="2"> 
+            </div> 
+            <div class="price-field"> 
+                <span>Maximum Minutes</span> 
+                <input type="number" 
+                       class="max-input" 
+                       value="7"> 
+            </div> 
+        </div> 
+        <div class="slider-container"> 
+            <div class="price-slider"> 
+            </div> 
+        </div> 
+    </div> 
+    <!-- Slider -->
+    <div class="range-input"> 
+        <input type="range" 
+               class="min-range" 
+               min="0" 
+               max="17" 
+               value="2" 
+               step="1"> 
+               
+        <input type="range" 
+               class="max-range" 
+               min="0" 
+               max="17" 
+               value="7" 
+               step="1"> 
+    </div> 
+
+
+    </div>
+
+   
+ 
+
+ 
+
+
+    <script src="js/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/horizontalChart.js"></script>
+    <script src="js/verticalChart.js"></script>
+    <script src="js/LineChart.js"></script>
+    <script src="js/BubblePlot.js"></script>
+
+   
+</body>
+</html>
