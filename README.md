@@ -1,6 +1,6 @@
 # Harmony Insights 
 
-**Harmony Insights ** is a powerful data analysis tool designed to provide valuable insights into personalized Spotify music trends and user behavior. This interactive web-based dashboard, developed using **D3.js**, aims to serve **Spotify's management, users, and artists** by analyzing streaming history and understanding user activity.
+**Harmony Insights** is a powerful data analysis tool designed to provide valuable insights into personalized Spotify music trends and user behavior. This interactive web-based dashboard, developed using **D3.js**, aims to serve **Spotify's management, users, and artists** by analyzing streaming history and understanding user activity.
 
 ## Features
 - **Personalized Insights**: Analyzes Spotify user listening habits and preferences. **(In this case i used my own spotify data)**
