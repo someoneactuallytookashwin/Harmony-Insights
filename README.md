@@ -16,7 +16,7 @@
 - **verticalChart.js**: Vertical bar chart for activity insights.
 - **horizontalChart.js**: Horizontal bar chart for user analysis.
 - **BubblePlot.js**: Bubble plot for track popularity.
-- **d3.v7.min.js**: D3.js library for visualization.
+- **data/merged_streamingHistory.csv**: Combined Spotify streaming history used by the dashboard.
 
 ## Data Processing Pipeline
 1. **Data Collection**: Spotify streaming history dataset with timestamps, song metadata, and user details.
@@ -34,10 +34,23 @@
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/yourusername/Harmony-Insights-3.git
-2. **Navigate to the project Repository:**
+   ```
+2. **Navigate to the project directory:**
    ```sh
    cd Harmony-Insights-3
-3. Open **index.html** in a browser to view the dashboard.
+   ```
+3. **Host locally (recommended):**
+   ```sh
+   python3 -m http.server 8000
+   ```
+4. **Open the dashboard in your browser:**
+   - [http://localhost:8000](http://localhost:8000)
+
+### Why local hosting is required
+The dashboard loads CSV data with D3 (`d3.csv(...)`). Most browsers block local file data requests when opened via `file://`, so opening `index.html` directly can result in empty charts.
+
+### Stop the local server
+In the same terminal running the server, press `Ctrl + C`.
 
 ## Dependencies
 - **D3.js v7** (for interactive visualizations)
