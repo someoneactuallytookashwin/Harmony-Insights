@@ -92,7 +92,17 @@ rangeVals_max =  parseInt(d3.max(data, d => d.minutesPlayed));
     
 
 
-}).catch(error => console.error(error));
+}).catch(error => {
+    console.error(error);
+    const grid = document.querySelector('.grid-container');
+    if (grid) {
+        const message = document.createElement('p');
+        message.style.color = '#b00020';
+        message.style.textAlign = 'center';
+        message.textContent = 'Unable to load chart data. Open this project with a local web server (not file://).';
+        grid.prepend(message);
+    }
+});
 
 
 

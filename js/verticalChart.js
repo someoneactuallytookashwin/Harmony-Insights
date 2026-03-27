@@ -68,17 +68,10 @@ class createVerticalChart {
          // Process data
          vis.processedData = d3.rollup(vis.data, v => d3.sum(v, d => d.msPlayed / 60000), d => d.artistName);
          
-         let randomStartIndex=0;
-         let randomEndIndex = 10;
-
-        //  randomStartIndex = Math.floor(Math.random() * (vis.processedData.size - 10));
-
-        //  randomEndIndex = randomStartIndex + 10;
-
-
+         // Keep only the top 5 artists by total minutes played.
          vis.sortedData = Array.from(vis.processedData.entries())
-             .slice(randomStartIndex, randomEndIndex)
-             .sort((a, b) => d3.descending(a[1], b[1]));
+             .sort((a, b) => d3.descending(a[1], b[1]))
+             .slice(0, 5);
 
 
 
